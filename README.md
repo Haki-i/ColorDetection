@@ -1,5 +1,5 @@
 # ColorDetection
-Leds qui recopient la couleur détectée par un capteur
+Leds qui recopient la couleur détectée grace à un capteur
 
 # **Objectif du projet**
 
@@ -14,6 +14,14 @@ Nous utiliserons une led RGB à anode commune pour pouvoir obtenir une vaste pla
 ## b) Capteur de couleur
 
 Le capteur utilisé est le tcs34725. Afin de transmettre ses données sur notre carte, nous utilisons le protocole I2C grace aux pins SCL et SDA.
+
+Ce module est constitué de plusieurs photodiodes, qui sont des composants électroniques convertissant la lumière en courant électrique. Lorsqu'elles sont exposées à la lumière, les photons sont absorbés par le matériau des diodes. Leur énergie excite alors les électrons, les faisant sortir du matériau et créant ainsi un courant électrique.
+
+La quantité de courant produit est proportionnelle à l'intensité de la lumière frappant chaque photodiode. Plus la lumière est intense, plus le nombre de photons est élevé, et plus le courant généré est important.
+
+Il est important de noter que chaque photodiode est couverte par un filtre de couleur différent – rouge, vert ou bleu. Ce filtre ne laisse passer que la lumière de la couleur correspondante. Par exemple, la photodiode sous le filtre rouge réagira principalement à la lumière rouge.
+
+Grâce à cette configuration, nous pouvons différencier la couleur et l'intensité lumineuse de l'objet observé
 
 ## c) Alimentation
 
